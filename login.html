@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Signin</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   
+</head>
+
+<body>
+
+   <div class="container-fluid">
+    <div class="row">
+      <div id="main-div">
+        <img src="./imag/footerlogo.png" alt="" width="100%" height="100px">
+      <h1 id="h1">login panel</h1>
+      <form action="" onsubmit="signin()"  data-aos="zoom-out" data-aos-duration="1500">
+      <div id="child-div">
+      <label for=""><i class="fa fa-envelope pb-2" id="emailicon"></i>&nbsp;Email:</label> <br>
+      <input type="email" name="" id="Email" required="" class="form-control py-2" placeholder="Enter your email"><br>
+    
+      <label for=""><i class="fa fa-lock pb-2" id="password-icon"></i>&nbsp;Password:</label> <br>
+     <input type="password" name="" id="Pass" required="" class="form-control py-2" placeholder="Password"><br>
+      <span id="err4"></span><br>
+      <button type="submit" class="border rounded bg-primary text-white form-control py-2">Log in</button> <br>
+      </div>
+      </form>
+      </div>
+    </div>
+   </div>
+
+
+
+
+ 
+
+
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+<!-- AOS Animation -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script>
+  function signin(){
+  let email = document.getElementById("Email").value;
+  let pass = document.getElementById("Pass").value;
+
+  let localemail = localStorage.getItem("Email")
+  let localpass = localStorage.getItem("Password")
+
+  if(email == localemail && pass == localpass){
+    window.open("welcompage.html")
+   
+  }else{
+    document.getElementById("err4").innerHTML = "wrong password or email!"
+  }
+} 
+</script>
+
+</html>
+
+
+
+

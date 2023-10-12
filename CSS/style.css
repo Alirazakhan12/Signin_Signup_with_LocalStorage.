@@ -1,0 +1,206 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:wght@700&family=Noto+Serif:wght@800&family=Playfair+Display:wght@500&family=Poppins&family=Roboto+Condensed&family=Roboto+Slab:wght@700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ font-family: 'Bebas Neue', sans-serif;
+}
+*{
+ margin: 0;
+ padding: 0;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Sigin CSS start*/
+ #main-div{
+ width: 100%;
+ height: 600px;
+ background-image: url(../imag/back.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+#h1{
+ padding-left: 42%;
+ color: white;
+}
+#child-div{
+ width: 480px;
+ height: 400px;
+ background-color: white;
+ background-image: url("../imag/singnupback.jpg");
+ margin: auto;
+ margin-top: 10px;
+ border-radius: 14px;
+ padding: 40px;
+
+}
+@media(max-width:530px){
+ #child-div{
+  width:400px ;
+ }
+}
+@media(max-width:420px){
+ #child-div{
+  width: 300px;
+  padding:40px 12px 20px 12px
+ }
+}
+@media(max-width:335px){
+ #child-div{
+  width: 250px;
+  
+ }
+}
+@media(max-width:270px){
+ #child-div{
+  width: 200px;
+  
+ }
+}
+
+input{
+ width: 410px;
+ border-bottom: 1px solid black;
+ outline: none;
+ margin-top: 0px;
+ margin-bottom: 20px;
+ background-color: transparent;
+}
+
+#emailicon{
+ font-size: 16px;
+ opacity: 0.6;
+}
+#password-icon{
+ font-size: 16px;
+ opacity: 0.6;
+}
+
+#err4{
+ color: red;
+ display: inline;
+}
+button:hover{
+ opacity: 0.9;
+}
+
+
+/* Sigin CSS End */
+/* Sigup CSS Start */
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#err1{
+  color: red;
+  display: inline;
+}
+#err2{
+  color: red;
+  display: inline;
+}
+#err3{
+  color: red;
+  display: inline;
+}
+#err4{
+  color: red;
+  display: inline;
+}
+#signup-main{
+  width: 100%;
+  height: 800px;
+  background-image: url(../imag/back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#h1{
+  padding-left: 41%;
+  padding-top: 0px;
+  color: white;
+}
+#signup-child{
+  width: 550px;
+  /* height: 380px; */
+  background-color: white;
+  background-image: url("../imag/singnupback.jpg");
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 14px;
+ padding: 40px;
+  position: relative;
+}
+
+@media(max-width:565px){
+ #signup-child{
+  width:470px;
+ }
+}
+@media(max-width:470px){
+ #signup-child{
+  width: 350px;
+  padding:40px 12px 20px 12px
+ }
+}
+@media(max-width:335px){
+ #signup-child{
+  width: 250px;
+  
+ }
+}
+@media(max-width:270px){
+ #signup-child{
+  width: 200px;
+  
+ }
+}
+
+
+input{
+  width: 410px;
+  /* height: 30px; */
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  background-color: transparent;
+}
+label{
+  font-size: 18px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#usericon{
+  font-size: 16px;
+  opacity: 0.6;
+}
+#emailicon{
+  font-size: 16px;
+  opacity: 0.6;
+}
+#password-icon{
+  font-size: 16px;
+  opacity: 0.6;
+}
+#phone-icon{
+  font-size: 16px;
+  opacity: 0.6;
+}
+button{
+  font-size: 16px;
+  width: 410px;
+  margin-top: 30px;
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+button:hover{
+  opacity: 0.8;
+}
+/* Sigup CSS End */
+
