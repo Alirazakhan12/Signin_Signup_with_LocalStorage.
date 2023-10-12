@@ -61,23 +61,7 @@
 <script>
   AOS.init();
 </script>
-<script>
-  function signin(){
-  let email = document.getElementById("Email").value;
-  let pass = document.getElementById("Pass").value;
-
-  let localemail = localStorage.getItem("Email")
-  let localpass = localStorage.getItem("Password")
-
-  if(email == localemail && pass == localpass){
-    window.open("welcompage.html")
-   
-  }else{
-    document.getElementById("err4").innerHTML = "wrong password or email!"
-  }
-} 
-</script>
-
+<script src="./JavaScript/script.js"></script>
 </html>
 
 
